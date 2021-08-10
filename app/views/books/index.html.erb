@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html lang"ja">
+ <head>
+  <meta charset="UTF-8">
+   <link rel="Stylesheet" href="top.scss">
+   <title>BookersTop</title>
+ <body>
+
+
+
+ <h1>Books</h1>
+
+ <table>
+  <thead>
+   <tr>
+     <th>Title</th>
+     <th>Body</th>
+     <th colspan="3"></th>
+   </tr>
+  </thead>
+
+   <% @books.each do |book| %>
+  <tbody>
+    <tr>
+     <td>
+      <%= link_to book_path(book.id) do %>
+      <%= book.title  %>
+      <% end %>
+     </td>
+     <td><%= book.body %></td>
+    <tr>
+  </tbody>
+  <% end %>
+ </table>
+
+ <h2>New book</h2>
+
+
+
+ <%= form_with model: @book, local: true do |f| %>
+
+ <label for = "book_title">Title</label>
+ <%= f.text_field :title %>
+
+ <label for = "Body_title">Body</label>
+ <%= f.text_area :body %>
+ <div class="text-bottom">
+   <%= f.submit "Create Book" %>
+ </div>
+
+ <% end %>
+
+ </body>
+</html>

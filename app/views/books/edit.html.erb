@@ -1,0 +1,34 @@
+ <!DOCTYPE>
+<html lang"ja">
+ <head>
+  <meta charset="UTF-8">
+   <link rel="Stylesheet" href="edit.scss">
+   <title>BookersEdit</title>
+ <body>
+
+  <h1>Editing Book</h1>
+
+
+
+
+  <%= form_with model:@book,url:"/books/#{@book.id}",local:true do |f| %>
+
+   <div class="field1">
+    <label for = "book_title">Title</label>
+    <%= f.text_field :title %>
+   </div>
+
+   </div class="field2">
+    <label for = "book_body">Body</label>
+    <%= f.text_area :body %>
+   </div>
+
+   <div class="text-bottom">
+     <%= f.submit "Update Book" %>
+   </div>
+
+  <% end %>
+
+
+ </body>
+</html>
