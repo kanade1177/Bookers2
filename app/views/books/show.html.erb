@@ -40,6 +40,11 @@
  </tbody>
 </table>
 
+   <%= link_to "Edit" %>
+
+  <% if @book.user_id == current_user.id%>
+   <%= link_to "Destroy", book_path(@book.id), method: :delete %>
+  <% end %>
 
 
 
