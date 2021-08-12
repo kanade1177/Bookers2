@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html lang"ja">
+ <head>
+  <meta charset="UTF-8">
+   <link rel="Stylesheet">
+   <title>UsersIndex</title>
+   <body>
+
+   <%= render "books/list", book: @book %>
+
+   <h1>Users</h1>
+
+   <table>
+     <thead>
+       <tr>
+         <th>image</th>
+         <th>name</th>
+       </tr>
+     </thead>
+
+     <% @users.each do |user| %>
+
+     <tbody>
+       <tr>
+         <td><%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %></td>
+         <td><%= user.name %></td>
+       </tr>
+     </tbody>
+     <% end %>
+   </table>
+
+   </body>
+   </html>
