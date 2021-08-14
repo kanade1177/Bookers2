@@ -1,0 +1,7 @@
+
+ <div class="profile-container">
+  <%= attachment_image_tag user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
+
+  <h3 class="profile-name">name <%= user.name %></h3>
+  <h3 class="profile-intoroduction">introduction <%= user.introduction %></h3>
+ </div>
