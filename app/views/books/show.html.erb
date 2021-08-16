@@ -5,40 +5,50 @@
  </head>
 
  <body>
+  <main>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-3">
+      <%= render "users/user_info", user: @user %>
+      <%= render "books/list", book: @book %>
+     </div>
 
- 
+     <div class="col-md-8 offset-md-1">
+      <h2>Book detail</h2>
+      <table class="table">
+ 　　　　　<tbody>
+  　　　　　<tr>
+    　  　 <td>
+           <%= link_to user_path(@book.user.id) do %>
+           <%= attachment_image_tag @book.user, :profile_image, :fill, 40, 40, format: 'jpeg', fallback: "no_image.jpg" %>
+           <% end %>
+         </td>
+    　　　　<td>
+     　　　　<%= link_to book_path(@book.id) do %>
+     　　　　<%= @book.title %>
+     　　　　<% end %>
+    　　　　</td>
+   　　　　　<td>
+　　　　　<%= @book.body %>
+         </td>
+         <td>
+          <% if @book.user_id == current_user.id%>
+   　　    　<%= link_to "Edit", edit_book_path(@book.id) %>
+  　　    　<% end %>
+         </td>
+         <td>
+  　　    　<% if @book.user_id == current_user.id%>
+   　　    　<%= link_to "Destroy", book_path(@book.id), method: :delete %>
+  　　    　<% end %>
+         </td>
+  　　　　　</tr>
+ 　　　　　</tbody>
+　 　 </table>
+　　 </div>
+　　</div>
+   </div>
+  </main>
 
- <%= render "books/list", book: @book %>
 
-
-
-  <h2>Book detail</h2>
-<table>
- <tbody>
-  <tr>
-    <td>
-     <%= link_to book_path(@book.id) do %>
-     <%= @book.title %>
-     <% end %>
-    </td>
-   <td>
-     <%= @book.body %>
-   </td>
-  </tr>
- </tbody>
-</table>
-
-  <% if @book.user_id == current_user.id%>
-   <%= link_to "Edit", edit_book_path(@book.id) %>
-  <% end %>
-
-  <% if @book.user_id == current_user.id%>
-   <%= link_to "Destroy", book_path(@book.id), method: :delete %>
-  <% end %>
-
-
-
-
-
-  </body>
+ </body>
 </html>

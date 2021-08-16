@@ -4,24 +4,27 @@
  <link rel="Stylesheet" href="application.scss">
  <body>
   <main>
-   <div class="container px-5 px-sm-0">
+   <div class="container">
     <div class="row">
      <div class="col-md-3">
-       <h2>New book</h2>
+      <%= render "users/user_info", user: @user %>
+
        <% if @book.errors.any? %>
          <%= @book.errors.count %>errors prohibited this obj from being saved:
           <% @book.errors.full_messages.each do | message | %>
           <li><%= message %></li>
          <% end %>
        <% end %>
+
       <%= render "books/list", book: @book %>
      </div>
      <div class="col-md-8 offset-md-1">
       <h1>Books</h1>
 
-       <table class="table table-hover table-inverse">
+       <table class="table">
         <thead>
          <tr>
+          <th></th>
           <th>Title</th>
           <th>Body</th>
           <th colspan="3"></th>
