@@ -14,7 +14,7 @@
   <header>
 
 
-    <% if user_signed_in? %>
+
     <div class="social">
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
      <div class="container">
@@ -25,43 +25,59 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
          <ul class="navbar-nav ml-auto">
 
-         <li>
-          <%= link_to user_path(current_user.id), class: "text-white", method: :get do %>
-           <i class="fas fa-home"></i>Home
+　　　　　<% if user_signed_in? %>
+
+          <li>
+           <%= link_to user_path(current_user.id), class: "text-white", method: :get do %>
+            <i class="fas fa-home"></i>Home
+           <% end %>
+          </li>
+
+
+
+          <li>
+           <%= link_to users_path,  class: "text-white", method: :get do  %>
+            <i class="fas fa-users"></i>Users
+           <% end %>
+          </li>
+
+          <li>
+           <%= link_to  books_path,  class: "text-white", method: :get do %>
+            <i class="fas fa-book-open"></i>Books
+           <% end %>
+          </li>
+
+          <li>
+           <%= link_to destroy_user_session_path, class: "text-white", method: :delete do %>
+            <i class="fas fa-sign-out-alt"></i>logout
+           <% end %>
+          </li>
+          <% else %>
+
+          <li>
+           <%= link_to root_path, class: "text-white", method: :get do %>
+            <i class="fas fa-home"></i>Home
+           <% end %>
+          </li>
+
+          <li>
+           <%= link_to about_path, class: "text-white", method: :get do %>
+            <i class="fas fa-link"></i>About
+           <% end %>
+          </li>
+
+          <li>
+           <%= link_to new_user_registration_path, class: "text-white", method: :get do %>
+            <i class="fas fa-user-plus"></i>sign up
+           <% end %>
+          </li>
+
+          <li>
+           <%= link_to new_user_session_path, class: "text-white", method: :get do %>
+            <i class="fas fa-sign-in-alt"></i>login
+           <% end %>
+          </li>
           <% end %>
-         </li>
-
-
-
-         <li>
-          <%= link_to users_path,  class: "text-white", method: :get do  %>
-           <i class="fas fa-users"></i>Users
-          <% end %>
-         </li>
-
-         <li>
-          <%= link_to  books_path,  class: "text-white", method: :get do %>
-           <i class="fas fa-book-open"></i>Books
-          <% end %>
-         </li>
-
-         <li>
-          <%= link_to destroy_user_session_path, class: "text-white", method: :delete do %>
-           <i class="fas fa-sign-out-alt"></i>logout
-          <% end %>
-         </li>
-         <% else %>
-
-
-
-         <li>
-          <%= link_to "新規登録",new_user_registration_path %>
-         </li>
-
-         <li>
-          <%= link_to "ログイン",new_user_session_path %>
-         </li>
-         <% end %>
          </ul>
        </div>
       </div>
@@ -69,7 +85,16 @@
     </div>
    </header>
 
-    <%= yield %>
 
+    <%= yield %>
+   <footer>
+    <div class="container mt-5">
+     <div class="row">
+      <div class="mx-auto">
+       <p>CopyRight Infratop.inc</p>
+      </div>
+     </div>
+    </div>
+   </footer>
   </body>
 </html>

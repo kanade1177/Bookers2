@@ -8,6 +8,9 @@
     <div class="row">
      <div class="col-md-3">
       <%= render "users/user_info", user: @user %>
+      <%= link_to edit_user_path(current_user.id), class: "btn btn-outline-secondary btn-block", method: :get do %>
+       <i class="fas fa-user-cog"></i>
+      <% end %>
 
        <% if @book.errors.any? %>
          <%= @book.errors.count %>errors prohibited this obj from being saved:
@@ -19,9 +22,9 @@
       <%= render "books/list", book: @book %>
      </div>
      <div class="col-md-8 offset-md-1">
-      <h1>Books</h1>
+      <h2>Books</h2>
 
-       <table class="table">
+       <table class="table table-hover tsble-inverse">
         <thead>
          <tr>
           <th></th>
@@ -36,7 +39,7 @@
          <tr>
           <td>
            <%= link_to user_path(book.user.id) do %>
-            <%= attachment_image_tag book.user, :profile_image, :fill, 40, 40, fallback: "no_image.jpg" %>
+            <%= attachment_image_tag book.user, :profile_image, format: 'jpeg', fallback: "no_image.jpg", size:"40x40" %>
            <% end %>
           </td>
           <td>

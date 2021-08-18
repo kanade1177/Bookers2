@@ -3,21 +3,27 @@
  <head>
   <meta charset="UTF-8">
    <link rel="Stylesheet">
-   
+
  <body>
   <main>
    <div class="container">
     <div class="row">
      <div class="col-md-3">
       <%= render "users/user_info", user: @user %>
+
+       <%= link_to edit_user_path(current_user.id), class: "btn btn-outline-secondary btn-block", method: :get do %>
+        <i class="fas fa-user-cog"></i>
+       <% end %>
+
       <%= render "books/list", book: @book %>
      </div>
      <div class="col-md-8 offset-md-1">
-      <h1>Books</h1>
+      <h2>Books</h2>
 
        <table class="table">
         <thead>
          <tr>
+          <th></th>
           <th>Title</th>
           <th>Body</th>
           <th colspan="3"></th>
@@ -27,7 +33,7 @@
         <tbody>
          <tr>
           <td>
-           <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
+           <%= attachment_image_tag @user, :profile_image, format: 'jpeg', fallback: "no_image.jpg", size:"40x40" %>
           </td>
           <td>
            <%= link_to book_path(book.id) do %>
