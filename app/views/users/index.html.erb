@@ -6,10 +6,11 @@
    <title>UsersIndex</title>
    <body>
      <main>
+     <p id="notice"></p>
      <div class="container px-5 px-sm-0">
       <div class="row">
        <div class="col-md-3">
-        <%= render "users/user_info", user: @user %>
+        <%= render "users/user_info", user: current_user %>
 
         <%= link_to edit_user_path(current_user.id), class: "btn btn-outline-secondary btn-block", method: :get do %>
          <i class="fas fa-user-cog"></i>
@@ -33,9 +34,9 @@
 
          <tbody>
           <tr>
-           <td><%= attachment_image_tag @user, :profile_image, format: 'jpeg', fallback: "no_image.jpg", size:"40x40" %></td>
+           <td><%= attachment_image_tag user, :profile_image, format: 'jpeg', fallback: "no_image.jpg", size:"40x40" %></td>
            <td><%= user.name %></td>
-           <td><%= link_to "Show", user_path(@user.id) %></td>
+           <td><%= link_to "Show", user_path(user.id) %></td>
           </tr>
          </tbody>
          <% end %>

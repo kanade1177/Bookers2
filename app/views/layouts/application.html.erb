@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+ <link rel="stylesheet" href="icon.scss">
   <head>
     <script src="https://kit.fontawesome.com/10a14675a6.js" crossorigin="anonymous"></script>
     <title>Bookers2</title>
@@ -27,54 +28,54 @@
 
 　　　　　<% if user_signed_in? %>
 
-          <li>
+          <li class="icon">
            <%= link_to user_path(current_user.id), class: "text-white", method: :get do %>
-            <i class="fas fa-home"></i>Home
+            <i class="fas fa-home"></i> Home
            <% end %>
           </li>
 
 
 
-          <li>
+          <li class="icon">
            <%= link_to users_path,  class: "text-white", method: :get do  %>
-            <i class="fas fa-users"></i>Users
+            <i class="fas fa-users"></i> Users
            <% end %>
           </li>
 
-          <li>
+          <li class="icon">
            <%= link_to  books_path,  class: "text-white", method: :get do %>
-            <i class="fas fa-book-open"></i>Books
+            <i class="fas fa-book-open"></i> Books
            <% end %>
           </li>
 
-          <li>
+          <li class="icon">
            <%= link_to destroy_user_session_path, class: "text-white", method: :delete do %>
-            <i class="fas fa-sign-out-alt"></i>logout
+            <i class="fas fa-sign-out-alt"></i> logout
            <% end %>
           </li>
           <% else %>
 
-          <li>
+          <li class="icon">
            <%= link_to root_path, class: "text-white", method: :get do %>
-            <i class="fas fa-home"></i>Home
+            <i class="fas fa-home"></i> Home
            <% end %>
           </li>
 
-          <li>
+          <li class="icon">
            <%= link_to about_path, class: "text-white", method: :get do %>
-            <i class="fas fa-link"></i>About
+            <i class="fas fa-link"></i> About
            <% end %>
           </li>
 
-          <li>
+          <li class="icon">
            <%= link_to new_user_registration_path, class: "text-white", method: :get do %>
-            <i class="fas fa-user-plus"></i>sign up
+            <i class="fas fa-user-plus"></i> sign up
            <% end %>
           </li>
 
-          <li>
+          <li class="icon">
            <%= link_to new_user_session_path, class: "text-white", method: :get do %>
-            <i class="fas fa-sign-in-alt"></i>login
+            <i class="fas fa-sign-in-alt"></i> login
            <% end %>
           </li>
           <% end %>
