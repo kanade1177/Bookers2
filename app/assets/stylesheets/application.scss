@@ -103,9 +103,13 @@ body{
    display: block;
 
  }
- 
+
  .li{
     display: list-item;
     text-align: -webkit-match-parent;
 }
 
+.icon{
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}

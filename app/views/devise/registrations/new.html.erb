@@ -5,8 +5,8 @@
     <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0">
     <h2>Sign up</h2>
 
-    <%= form_with model:@user, url: user_registration_path, id: "new_user", class:"new_us" do |f| %>
-    <%= render "devise/shared/error_messages", resource: resource %>
+    <%= form_with model: @user, url: user_registration_path, id: "new_user", class:"new_us" , local: true do |f| %>
+      <%= render "devise/shared/error_messages", resource: @user %>
 
     <div class="field">
      <%= f.label :name %>
@@ -35,7 +35,7 @@
      <%= f.submit "Sign up", class: "btn btn-success btn-sm" %>
     </div>
     <% end %>
-    <%= render "devise/shared/links" %>
+    <%#= render "devise/shared/links" %>
     </div>
    </div>
   </div>
