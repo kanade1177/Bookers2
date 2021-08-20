@@ -380,17 +380,17 @@ Failures:
 
   11) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい
       [31mFailure/Error: expect(page).to have_link book.title, href: book_path(book)[0m
-      [31m  expected to find link "si5mk" with href "/books/1" but there were no matches[0m
+      [31m  expected to find link "jv750" with href "/books/1" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:55:in `block (4 levels) in <main>'[0m
 
   12) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のオピニオンが表示される
       [31mFailure/Error: expect(page).to have_content book.body[0m
-      [31m  expected to find text "5jxmw1suq7yy9bwfvf72" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "cg6vinsq24oefgmrpl6h" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:59:in `block (4 levels) in <main>'[0m
 
   13) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content user.name[0m
-      [31m  expected to find text "0r4mboz133" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "8cmjjdu1k5" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:66:in `block (4 levels) in <main>'[0m
 
   14) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
@@ -400,7 +400,7 @@ Failures:
 
   15) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "New book" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:73:in `block (4 levels) in <main>'[0m
 
   16) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームが表示される
@@ -485,22 +485,22 @@ Failures:
 
   24) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
       [31mFailure/Error: expect(page).to have_content 'Book detail'[0m
-      [31m  expected to find text "Book detail" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "Book detail" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:118:in `block (4 levels) in <main>'[0m
 
   25) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
       [31mFailure/Error: expect(page).to have_link book.user.name, href: user_path(book.user)[0m
-      [31m  expected to find link "0t2fyao0cf" with href "/users/2" but there were no matches[0m
+      [31m  expected to find link "lzcj5us5u8" with href "/users/2" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:121:in `block (4 levels) in <main>'[0m
 
   26) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿のtitleが表示される
       [31mFailure/Error: expect(page).to have_content book.title[0m
-      [31m  expected to find text "2kso0" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "j54z8" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:124:in `block (4 levels) in <main>'[0m
 
   27) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿のopinionが表示される
       [31mFailure/Error: expect(page).to have_content book.body[0m
-      [31m  expected to find text "731qsi9na39rx507vhy3" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "xoswbish2lawbwvi2fsz" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:127:in `block (4 levels) in <main>'[0m
 
   28) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示される
@@ -515,7 +515,7 @@ Failures:
 
   30) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content user.name[0m
-      [31m  expected to find text "ea5lcx0eny" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "mvrhltbz65" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:139:in `block (4 levels) in <main>'[0m
 
   31) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
@@ -525,7 +525,7 @@ Failures:
 
   32) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "New book" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:146:in `block (4 levels) in <main>'[0m
 
   33) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームが表示される
@@ -638,7 +638,7 @@ Failures:
 
   43) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 「Editing Book」と表示される
       [31mFailure/Error: expect(page).to have_content 'Editing Book'[0m
-      [31m  expected to find text "Editing Book" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "Editing Book" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:207:in `block (4 levels) in <main>'[0m
 
   44) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 title編集フォームが表示される
@@ -728,7 +728,7 @@ Failures:
 
   54) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の名前がそれぞれ表示される
       [31mFailure/Error: expect(page).to have_content user.name[0m
-      [31m  expected to find text "e76ynlgrza" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "0zvcg6p158" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:261:in `block (4 levels) in <main>'[0m
 
   55) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人のshowリンクがそれぞれ表示される
@@ -738,7 +738,7 @@ Failures:
 
   56) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content user.name[0m
-      [31m  expected to find text "1p25o61fm8" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "p54cphh2uh" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:272:in `block (4 levels) in <main>'[0m
 
   57) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
@@ -748,7 +748,7 @@ Failures:
 
   58) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "New book" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:279:in `block (4 levels) in <main>'[0m
 
   59) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームが表示される
@@ -810,17 +810,17 @@ Failures:
 
   66) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧に自分の投稿のtitleが表示され、リンクが正しい
       [31mFailure/Error: expect(page).to have_link book.title, href: book_path(book)[0m
-      [31m  expected to find link "pk8k4" with href "/books/1" but there were no matches[0m
+      [31m  expected to find link "8nk0v" with href "/books/1" but there were no matches[0m
       [36m# ./spec/system/02_after_login_spec.rb:312:in `block (4 levels) in <main>'[0m
 
   67) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧に自分の投稿のopinionが表示される
       [31mFailure/Error: expect(page).to have_content book.body[0m
-      [31m  expected to find text "ty0i1j0xsqlmfh9ktih2" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "isdult02yc6pa45c56sh" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:315:in `block (4 levels) in <main>'[0m
 
   68) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: expect(page).to have_content user.name[0m
-      [31m  expected to find text "1imjx6adlm" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "wflhq0aonw" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:326:in `block (4 levels) in <main>'[0m
 
   69) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
@@ -830,7 +830,7 @@ Failures:
 
   70) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: expect(page).to have_content 'New book'[0m
-      [31m  expected to find text "New book" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "New book" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/02_after_login_spec.rb:333:in `block (4 levels) in <main>'[0m
 
   71) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームが表示される
@@ -887,7 +887,7 @@ Failures:
 
   77) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 名前編集フォームに自分の名前が表示される
       [31mFailure/Error: expect(page).to have_field 'user[name]', with: user.name[0m
-      [31m  expected to find visible field "user[name]" that is not disabled with value "zaqaqa0iad" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "zaqaqa0iad" but was nil[0m
+      [31m  expected to find visible field "user[name]" that is not disabled with value "qyoeds8p25" but there were no matches. Also found "", which matched the selector but not all filters. Expected value to be "qyoeds8p25" but was nil[0m
       [36m# ./spec/system/02_after_login_spec.rb:363:in `block (4 levels) in <main>'[0m
 
   78) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 画像編集フォームが表示される
@@ -949,12 +949,12 @@ Failures:
 
   84) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログイン成功時
       [31mFailure/Error: is_expected.to have_content 'successfully'[0m
-      [31m  expected to find text "successfully" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "successfully" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:26:in `block (3 levels) in <main>'[0m
 
   85) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時
       [31mFailure/Error: is_expected.to have_content 'successfully'[0m
-      [31m  expected to find text "successfully" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "successfully" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:36:in `block (3 levels) in <main>'[0m
 
   86) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザのプロフィール情報更新成功時
@@ -1150,27 +1150,27 @@ Failures:
 
   100) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
        [31mFailure/Error: expect(page).to have_content 'Book detail'[0m
-       [31m  expected to find text "Book detail" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+       [31m  expected to find text "Book detail" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:223:in `block (5 levels) in <main>'[0m
 
   101) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
        [31mFailure/Error: expect(page).to have_link other_book.user.name, href: user_path(other_book.user)[0m
-       [31m  expected to find link "7om086at91" with href "/users/1" but there were no matches[0m
+       [31m  expected to find link "tp3hjjh10s" with href "/users/1" but there were no matches[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:226:in `block (5 levels) in <main>'[0m
 
   102) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿のtitleが表示される
        [31mFailure/Error: expect(page).to have_content other_book.title[0m
-       [31m  expected to find text "rcw7v" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+       [31m  expected to find text "og8vt" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:229:in `block (5 levels) in <main>'[0m
 
   103) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿のopinionが表示される
        [31mFailure/Error: expect(page).to have_content other_book.body[0m
-       [31m  expected to find text "s0leehbnt7lgo4m4cx90" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+       [31m  expected to find text "obci9u81j0q98ygblfuy" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:232:in `block (5 levels) in <main>'[0m
 
   104) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
        [31mFailure/Error: expect(page).to have_content other_user.name[0m
-       [31m  expected to find text "34440zbkdl" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+       [31m  expected to find text "db8ptdvget" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:244:in `block (5 levels) in <main>'[0m
 
   105) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
@@ -1203,17 +1203,17 @@ Failures:
 
   109) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧に他人の投稿のtitleが表示され、リンクが正しい
        [31mFailure/Error: expect(page).to have_link other_book.title, href: book_path(other_book)[0m
-       [31m  expected to find link "r9uxc" with href "/books/2" but there were no matches[0m
+       [31m  expected to find link "vgxm1" with href "/books/2" but there were no matches[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:280:in `block (5 levels) in <main>'[0m
 
   110) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧に他人の投稿のopinionが表示される
        [31mFailure/Error: expect(page).to have_content other_book.body[0m
-       [31m  expected to find text "qhy587ss3nhyum53pqmy" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+       [31m  expected to find text "feoiai38pgg3dr64fhww" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:283:in `block (5 levels) in <main>'[0m
 
   111) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
        [31mFailure/Error: expect(page).to have_content other_user.name[0m
-       [31m  expected to find text "t3ropriqjp" in "Bookers\n　　　　　 Home About sign up login\n　　\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
+       [31m  expected to find text "wfze1rslvr" in "Bookers\n　　　　　 Home About sign up login\nLog in\nName\nPassword\nRemember me\nSign up Forgot your password?\nCopyRight Infratop.inc"[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:293:in `block (5 levels) in <main>'[0m
 
   112) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
@@ -1285,7 +1285,7 @@ Failures:
        [31m  expected to find css ".fas.fa-user-cog" but there were no matches[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:443:in `block (4 levels) in <main>'[0m
 
-Finished in 14.23 seconds (files took 2.22 seconds to load)
+Finished in 13.66 seconds (files took 1.33 seconds to load)
 [31m197 examples, 124 failures[0m
 
 Failed examples:
