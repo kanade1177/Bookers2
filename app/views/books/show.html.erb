@@ -4,20 +4,16 @@
  <link rel="Stylesheet">
  <body>
   <main>
-   <% if flash[:notice] %>
-     <p id="notice">
-       <%= flash[:notice] %>
-     </p>
-   <% end %>
+
    <p id="notice"></p>
    <div class="container">
     <div class="row">
      <div class="col-md-3">
       <%= render "users/user_info", user: @user %>
-      <%= link_to edit_user_path(current_user.id), class: "btn btn-outline-secondary btn-block", method: :get do %>
+      <%= link_to edit_user_path(@user), class: "btn btn-outline-secondary btn-block", method: :get do %>
        <i class="fas fa-user-cog"></i>
       <% end %>
-      <%= render "books/list", book: @book %>
+      <%= render "books/list", book: @newbook %>
      </div>
 
      <div class="col-md-8 offset-md-1">

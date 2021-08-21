@@ -37,13 +37,13 @@
 
 
           <li class="icon">
-           <%= link_to users_path,  class: "text-white", method: :get do  %>
+           <%= link_to users_path, class: "text-white", method: :get do  %>
             <i class="fas fa-users"></i> Users
            <% end %>
           </li>
 
           <li class="icon">
-           <%= link_to  books_path,  class: "text-white", method: :get do %>
+           <%= link_to  books_path, class: "text-white", method: :get do %>
             <i class="fas fa-book-open"></i> Books
            <% end %>
           </li>
@@ -86,7 +86,7 @@
 
    </header>
 
-
+　　<%= render 'layouts/flash' %>
 
     <%= yield %>
    <footer>
