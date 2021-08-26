@@ -13,6 +13,7 @@ before_action :ensure_correct_user, only: [:edit]
     @book = Book.find(params[:id])
     @user = @book.user
     @newbook = Book.new
+    @book_comment = BookComment.new
   end
 
 
