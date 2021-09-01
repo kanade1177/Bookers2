@@ -20,14 +20,15 @@
       <%= render "searches/search" %>
       <h2>Book detail</h2>
 
-       <p id="book_counts"><%= render "/books/table", book: @book %><p>
-       <table>
-        <p id="book_comments_area">
+       <div id="book_counts"><%= render "books/table", book: @book %></div>
+       
+        <div id="book_comments_area">
          <%= render "/book_comments/index", book: @book %>
-        </p>
-        <p class="comment-create">
+        </div>
+       <table> 
+        <div class="comment-create">
          <%= render "/book_comments/form", { book: @book, book_comment: @book_comment } %>
-        </p>
+        </div>
        </table>
      </div>
     </div>
