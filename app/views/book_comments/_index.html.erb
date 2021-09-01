@@ -1,0 +1,8 @@
+
+  <% book.book_comments.each do |book_comment| %>
+ <div>
+   <%= link_to user_path(book.user.id) do %>
+    <%= book_comment.user.name %>
+   <% end %>
+  <% end %>
+ </div>
