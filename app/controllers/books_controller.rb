@@ -51,6 +51,10 @@ before_action :ensure_correct_user, only: [:edit]
     redirect_to books_path
 
   end
+  
+  def weelly_rank
+    @ranks = Book.last_week
+  end
 
   private
 
