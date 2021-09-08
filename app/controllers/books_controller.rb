@@ -3,7 +3,13 @@ before_action :ensure_correct_user, only: [:edit]
 
 
   def index
-    @books = Book.all
+    to  = Time.current.at_end_of_day
+    from  = (to - 6.day).at_beginning_of_day
+    @books = Book.includes(:favorited_users).
+      sort {|a,b|
+        b.favorited_users.includes(:favorites).where(created_at: from...to).size <=>
+        a.favorited_users.includes(:favorites).where(created_at: from...to).size
+      }
     @book = Book.new
     @user = current_user
   end
@@ -51,10 +57,8 @@ before_action :ensure_correct_user, only: [:edit]
     redirect_to books_path
 
   end
-  
-  def weelly_rank
-    @ranks = Book.last_week
-  end
+
+
 
   private
 

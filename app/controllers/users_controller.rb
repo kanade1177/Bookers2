@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-    
+
     @book = Book.new
   end
 
@@ -12,6 +12,13 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @books = @user.books
     @book = Book.new
+    @today_book = @books.created_today
+    @yesterday_book = @books.created_yesterday
+    @thisweek_book = @books.created_thisweek
+    @lastweek_book = @books.created_a_week_ago
+    @thismonth_book = @books.created_thismonth
+    @lastmonth_book = @books.created_a_month_ago
+
   end
 
 

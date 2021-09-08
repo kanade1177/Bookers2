@@ -28,6 +28,10 @@
        <% end %>
       <% end %>
 
+      <% if current_user != @user %>
+       <%= link_to "StartChat", chat_path(@user.id) %>
+      <% end %>
+
       <%= render "books/list", book: @book %>
      </div>
 
@@ -62,6 +66,11 @@
         </tbody>
         <% end %>
        </table>
+
+        <%= render partial: "users/day_count" %>
+        <%= render partial: "users/week_count" %>
+        <%= render partial: "users/month_count" %>
+
 
      </div>
     </div>

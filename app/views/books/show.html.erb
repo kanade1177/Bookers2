@@ -11,6 +11,7 @@
      <div class="col-md-3">
       <%= render "users/user_info", user: @user %>
       <%= link_to edit_user_path(@user), class: "btn btn-outline-secondary btn-block", method: :get do %>
+
        <i class="fas fa-user-cog"></i>
       <% end %>
       <%= render "books/list", book: @newbook %>
@@ -21,11 +22,11 @@
       <h2>Book detail</h2>
 
        <div id="book_counts"><%= render "books/table", book: @book %></div>
-       
+
         <div id="book_comments_area">
          <%= render "/book_comments/index", book: @book %>
         </div>
-       <table> 
+       <table>
         <div class="comment-create">
          <%= render "/book_comments/form", { book: @book, book_comment: @book_comment } %>
         </div>

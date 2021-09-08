@@ -1,0 +1,25 @@
+<div class = "table_width">
+   <table class="table table-bordered">
+    <thead>
+     <tr>
+      <th>今月の投稿数</th>
+      <th>先月の投稿数</th>
+      <th>前月比</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+     　<td><%= @thismonth_book.count %></td>
+     　<td><%= @lastmonth_book.count %></td>
+     　<td>
+       <% if @lastmonth_book.count == 0 %>
+        先月の投稿はありません
+       <% else %>
+       　<% @the_month_before =   @thismonth_book.count / @lastmonth_book.count.to_f  %>
+       　<%= (@the_month_before * 100).round %>
+       <% end %>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
