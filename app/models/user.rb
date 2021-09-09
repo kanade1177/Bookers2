@@ -14,6 +14,8 @@ class User < ApplicationRecord
   has_many :followings, through: :relationships, source: :followed
   has_many :user_rooms, dependent: :destroy
   has_many :chats, dependent: :destroy
+  has_many :group_users
+  has_many :groups, through: :group_users
 
   def follow(user_id)
     relationships.create(followed_id: user_id)
@@ -41,7 +43,7 @@ class User < ApplicationRecord
     end
   end
 
-  attachment :profile_image
+  attachment :profile_image, destroy: false
 
   validates :name, presence:true, uniqueness:true, length: { minimum: 2, maximum: 20 }
   validates :introduction, length: { maximum: 50 }
