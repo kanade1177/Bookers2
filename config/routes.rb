@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  
   get 'chats/show'
   devise_for :users
   root to: 'homes#top'
